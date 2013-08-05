@@ -4,7 +4,7 @@ This repository is folked from https://github.com/michaeljsmalley/dotfiles becau
 the author has the same idea just like I do. And he also wrote a exllent post
 to introduce how to save and sync your own dotfiles.
 
-I cut down those setups that current I don't need and leave all good stuff that
+I cut off files that current I don't need and leave all good stuff that
 I thought suit for me.
 
 1. Bashrc
