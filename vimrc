@@ -41,9 +41,9 @@ colorscheme molokai       " set colorscheme
 autocmd BufRead,BufNewFile *.json set filetype=json
 autocmd Syntax json sou ~/.vim/syntax/json.vim
 
-" Highlight characters that go over 80 columns
+" Highlight characters that go over 120 columns
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+match OverLength /\%121v.\+/
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 04. Vim UI                                                                 "
@@ -72,6 +72,17 @@ set smarttab              " use tabs at the start of a line, spaces elsewhere
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 06. dbgPavim Setup for debug php in vim                                    "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:dbgPavimPort = 9000
+let g:dbgPavimPort = 9009
 let g:dbgPavimBreakAtEntry = 0
 
+let g:dbgPavimKeyRun         = '<F8>'
+let g:dbgPavimKeyStepOver    = '<F6>'
+let g:dbgPavimKeyStepInto    = '<F5>'
+let g:dbgPavimKeyStepOut     = '<F7>'
+
+let g:dbgPavimKeyPropertyGet = '<F3>'
+let g:dbgPavimKeyContextGet  = '<F4>'
+let g:dbgPavimKeyToggleBp    = '<F9>'
+let g:dbgPavimKeyToggleBae   = '<F10>'
+let g:dbgPavimKeyRelayout    = '<F12>'
+let g:dbgPavimKeyEval        = '<c-u>'
