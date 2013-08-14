@@ -35,7 +35,8 @@ set ofu=syntaxcomplete#Complete
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256              " enable 256-color mode.
 syntax enable             " enable syntax highlighting (previously syntax on).
-colorscheme molokai       " set colorscheme
+"colorscheme molokai       " set colorscheme
+colorscheme solarized
 
 " Prettify JSON files
 autocmd BufRead,BufNewFile *.json set filetype=json
@@ -57,6 +58,7 @@ set ignorecase            " Make searches case-insensitive.
 set ruler                 " Always show info along bottom.
 set showmatch
 set nospell               " Turn off spell check
+set nofoldenable          " turn off auto foldenable"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 05. Text Formatting/Layout                                                 "
