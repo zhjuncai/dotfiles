@@ -88,3 +88,18 @@ let g:dbgPavimKeyToggleBp    = '<F9>'
 let g:dbgPavimKeyToggleBae   = '<F10>'
 let g:dbgPavimKeyRelayout    = '<F12>'
 let g:dbgPavimKeyEval        = '<c-u>'
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 07. Clear all register                                                     "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! ClearRegisters()
+  let regs='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/-="*+'
+  let i=0
+  while(i<strlen(regs))
+    exec 'let @'.regs[i].'=""'
+    let i=i+1
+  endwhile
+endfunction
+command! ClearRegisters call ClearRegisters()
+
