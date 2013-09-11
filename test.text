@@ -4,6 +4,4 @@ Another modifiy here line
 
 system.print.out('test');
 
-var_dump(var);
-
 add new line
